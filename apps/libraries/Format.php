@@ -1,8 +1,6 @@
 <?php
-// Note, this cannot be namespaced for the time being due to how CI works
-//namespace Restserver\Libraries;
 
-defined('__NAJZMI_PUDINTEA__') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  * Format class
@@ -380,6 +378,9 @@ class Format {
 
         // Close the handle
         fclose($handle);
+
+        // Convert UTF-8 encoding to UTF-16LE which is supported by MS Excel
+        $csv = mb_convert_encoding($csv, 'UTF-16LE', 'UTF-8');
 
         return $csv;
     }

@@ -71,7 +71,7 @@
 <body>
 
 <div id="container">
-    <h1>REST Server Tests</h1>
+    <h1>REST Server Tests <?=APPPATH . 'libraries/Format.php';?></h1>
 
     <div id="body">
 

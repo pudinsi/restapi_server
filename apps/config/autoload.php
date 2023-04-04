@@ -1,5 +1,5 @@
 <?php
-defined('__NAJZMI_PUDINTEA__') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -57,9 +57,8 @@ $autoload['packages'] = array();
 | in the controller:
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
-| $autoload['libraries'] = array('database', 'session','template', 'Admin_bo');
 */
-$autoload['libraries'] = array('session');
+$autoload['libraries'] = array();
 
 /*
 | -------------------------------------------------------------------
@@ -89,9 +88,8 @@ $autoload['drivers'] = array();
 | Prototype:
 |
 |	$autoload['helper'] = array('url', 'file');
-| $autoload['helper'] = array('url','Admin','security');
 */
-$autoload['helper'] = array('url','security');
+$autoload['helper'] = array();
 
 /*
 | -------------------------------------------------------------------
